@@ -22,6 +22,8 @@ public class NoteController {
         return noteRepo.findAll();
     }
 
+    @MessageMapping("/notes.getNoteById")
+    @SendTo("/topic/public")
     public Note getNoteById(long id) {
         return noteService.findById(id);
     }
