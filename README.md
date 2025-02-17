@@ -5,6 +5,6 @@ Addition of WebSocketEventListener class
 Initial commit of the backend.
 
   <h1>TODO</h1>
-- Adding JPA connection
-- Coding the HTML, CSS, JavaScript 
-- Making the database with PostgreSQL
+<ul>Adding JPA connection</ul>
+<ul>Coding the HTML, CSS, JavaScript </ul>
+<ul>Making the database with PostgreSQL</ul>
