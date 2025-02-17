@@ -1,3 +1,6 @@
+  <h2>V0.1</h2>
+Addition of WebSocketEventListener class
+  
   <h2>V0.0</h2>
 Initial commit of the backend.
 
