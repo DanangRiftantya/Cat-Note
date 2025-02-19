@@ -2,7 +2,6 @@ package danangriftantya.Cat.Note.user;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.time.Instant;
 import java.util.Date;
 
 @Getter
@@ -11,6 +10,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 @Entity
+@Table(name = "users")
 public class User {
 
     @Id

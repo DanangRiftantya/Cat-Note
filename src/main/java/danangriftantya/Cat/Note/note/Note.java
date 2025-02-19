@@ -3,7 +3,6 @@ package danangriftantya.Cat.Note.note;
 import danangriftantya.Cat.Note.user.User;
 import jakarta.persistence.*;
 import lombok.*;
-import java.time.Instant;
 import java.util.Date;
 
 
@@ -13,6 +12,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 @Entity
+@Table(name = "notes")
 public class Note {
 
     @Id
@@ -22,10 +22,14 @@ public class Note {
     private long id;
 
     private String title;
+
     private String content;
+
     @ManyToOne
-    @JoinColumn(name = "author_id")
+    @JoinColumn(name = "author_id", referencedColumnName = "id")
+    @JoinColumn(name = "author_username", referencedColumnName = "username")
     private User author;
+
     private Date lastUpdated;
 
 }

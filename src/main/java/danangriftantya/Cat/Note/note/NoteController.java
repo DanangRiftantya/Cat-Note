@@ -28,6 +28,13 @@ public class NoteController {
         return noteService.findById(id);
     }
 
+    // have to take a deeper look for this method
+//    @MessageMapping("/notes.getNoteByTitle")
+//    @SendTo("/topic/public")
+//    public Note getNoteByTitle(String title) {
+//        return getNoteByTitle(title);
+//    }
+
     @MessageMapping("/notes.createNote")
     @SendTo("/topic/public")
     public Note createNote(Note note) {

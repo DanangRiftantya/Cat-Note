@@ -14,22 +14,6 @@ import java.sql.DriverManager;
 
 public class CatNoteApplication {
 
-	public static void main(String[] args) {
-
-		SpringApplication.run(CatNoteApplication.class, args);
-
-//		try {
-//			Class.forName("org.postgresql.Driver");
-//			Connection connection = DriverManager.getConnection(
-//					"jdbc:postgresql://localhost:5432/postgres",
-//					"postgres",
-//					"Muhammad$201000"
-//			);
-//			System.out.println("✅ Connection successful!");
-//			connection.close();
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-	}
+	public static void main(String[] args) {SpringApplication.run(CatNoteApplication.class, args);}
 
 }
