@@ -2,12 +2,15 @@ package danangriftantya.Cat.Note.user;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.time.Instant;
+import java.util.Date;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Entity
 public class User {
 
     @Id
@@ -17,8 +20,16 @@ public class User {
     private long id;
 
     @Basic(optional = false)
+    @Column(unique = true, nullable = false)
     private String username;
 
+    @Column(unique = true, nullable = false)
+    private String email;
+
+    @Column(nullable = false)
     private String password;
+
+    private Date timeCreated;
+    private Date timeUpdated;
 
 }
